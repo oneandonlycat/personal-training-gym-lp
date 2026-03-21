@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>パーソナルトレーニングジム～凪～</title>
+
+  <!-- =====================
+       CSS
+  ===================== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=BIZ+UDPGothic&family=Kaisei+Opti&family=Kaisei+Decol&family=Stardos+Stencil:wght@400;700&family=Outfit:wght@100..900&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- =====================
+       Toast / 送信完了通知
+  ===================== -->
+  <div class="toast-wrapper">
+    <div id="toast" class="toast">
+      <i class="fa-regular fa-circle-check toast-icon"></i>
+      送信が完了しました！
+    </div>
+  </div>
+
+
+
+  <main>
+
+    <!-- =====================
+         Header / ヘッダー
+    ===================== -->
+    <header id="site-header">
+      <h1 class="site-title">
+        <span class="site-title-small">パーソナルトレーニングジム</span>
+        <span class="site-title-main">～凪～</span>
+      </h1>
+    </header>
+    <!-- /#site-header -->
+
+
+    <!-- =====================
+         First View / ファーストビュー
+         （動画＋キャッチコピー）
+    ===================== -->
+    <section id="fv">
+      <div class="video-container">
+        <video src="media/personaltraining.mp4" autoplay muted loop playsinline></video>
+
+        <!-- FV テキストオーバーレイ -->
+        <div class="overlay">
+          <p class="fv-line1">自然と調和し</p>
+          <p class="fv-line2">呼吸する身体に</p>
+        </div>
+      </div>
+    </section>
+    <!-- /#fv -->
+
+
+    <!-- =====================
+         Intro / 導入セクション
+         （キャッチ＋短い説明）
+    ===================== -->
+    <section id="intro" class="section fade-in">
+      <div class="container">
+        <h2>自分の体を知り、<span class="nobr">自分を知る</span></h2>
+        <p>パーソナライズされたトレーニングで、<span class="nobr">新しい毎日を歩みましょう！</span></p>
+      </div>
+    </section>
+    <!-- /#intro -->
+
+
+    <!-- =====================
+         Campaign Top / 上部CTA
+         （60分無料体験バナー）
+    ===================== -->
+    <section id="campaign-top" class="section fade-in">
+      <div class="container">
+
+        <!-- CTA バナー全体 -->
+        <div class="cta-banner fade-zoom">
+
+          <!-- 60分バッジ -->
+          <div class="starburst-wrapper">
+            <div class="starburst">
+              <span class="badge-number">60</span>分
+            </div>
+          </div>
+
+          <!-- 見出し -->
+          <header class="cta-header">
+            <h3 class="cta-main">
+              <span class="slash">＼</span>
+              <span class="cta-text">無料体験キャンペーン<span class="nobr">実施中 !</span></span>
+              <span class="slash">／</span>
+            </h3>
+          </header>
+
+          <!-- CTA ボックス（説明＋ボタン） -->
+          <div class="cta-box">
+            <p>その場でのお申込みで <span class="nobr marker marker--yellow marker--low emphasis">￥20,000の入会金も無料！</span></p>
+
+            <a href="#cta" class="cta-button hover-accent" data-gtag="cta:click_top">
+              無料体験を申し込む
+            </a>
+          </div>
+
+        </div><!-- /.cta-banner -->
+
+      </div><!-- /.container -->
+    </section>
+    <!-- /#campaign-top -->
+
+
+    <!-- =====================
+         Fitness Worries / 悩み訴求
+         （女性イラスト＋吹き出し5つ）
+    ===================== -->
+    <section id="fitness-worries" class="section fade-in">
+      <div class="container">
+
+        <h2>こんなお悩み<span class="nobr">ありませんか？</span></h2>
+
+        <!-- 悩みイラスト＋吹き出し群 -->
+        <div class="worry-area">
+
+          <div class="woman-wrap">
+            <img src="media/fitness-worries.png" alt="悩む女性の写真" class="worry-woman">
+
+            <!-- 吹き出し1 -->
+            <div class="bubble bubble1">
+              <div class="bubble-text">
+                始めても<br>なかなか<br>続かない
+              </div>
+            </div>
+
+            <!-- 吹き出し2 -->
+            <div class="bubble bubble2">
+              <div class="bubble-text">
+                忙しくて<br>時間ない
+              </div>
+            </div>
+
+            <!-- 吹き出し3 -->
+            <div class="bubble bubble3">
+              <div class="bubble-text">
+                ストレス<br>溜まると<br>食べちゃう
+              </div>
+            </div>
+
+            <!-- 吹き出し4 -->
+            <div class="bubble bubble4">
+              <div class="bubble-text">
+                色々鍛え方<br>ありすぎて<br>分からない
+              </div>
+            </div>
+
+            <!-- 吹き出し5 -->
+            <div class="bubble bubble5">
+              <div class="bubble-text">
+                体を<br>痛めないか<br>心配
+              </div>
+            </div>
+
+          </div><!-- /.woman-wrap -->
+
+        </div><!-- /.worry-area -->
+
+      </div><!-- /.container -->
+    </section>
+    <!-- /#fitness-worries -->
+
+
+    <!-- 下向き矢印（次セクション誘導） -->
+    <img class="arrow" src="media/arrow-long-down.svg" alt="下向き矢印">
+
+
+    <!-- =====================
+         Solutions / 解決法提案
+         （特徴4つ＋CTA）
+    ===================== -->
+    <div class="fitness-solution"><!-- bg wrapper（背景用ラッパー） -->
+      <section id="fitness-solutions" class="section fade-in">
+        <div class="container">
+
+          <h2 class="corner-cut">
+            あなたに合った<span class="nobr">トレーニングで</span><br>
+            軽やかな心身を<span class="nobr">手に入れましょう！</span>
+          </h2>
+
+          <!-- 特徴リスト（4つの特徴＋最後にCTA） -->
+          <ul class="features">
+
+            <!-- 特徴1 -->
+            <li class="feature fade-in-card">
+              <div class="feature-header">
+                <div class="feature-header-bg corner-cut"></div>
+                <div class="feature-number"><span>1</span></div>
+                <div class="feature-title">
+                  <h3>オンライン指導もあり♪<span class="nobr">続けやすい</span><span class="nobr">トレーニングプログラム</span></h3>
+                </div>
+              </div>
+              <div class="feature-body">
+                <p>
+                  オンライン指導を取り入れたハイブリッド受講で、無理なく続けられるメニューを提供。始めても続かない…という悩みを解消します。
+                </p>
+              </div>
+            </li>
+
+            <!-- 特徴2 -->
+            <li class="feature fade-in-card">
+              <div class="feature-header">
+                <div class="feature-header-bg corner-cut"></div>
+                <div class="feature-number"><span>2</span></div>
+                <div class="feature-title">
+                  <h3>栄養指導を兼ねた<span class="nobr">ダイエットメニュー</span>を考案</h3>
+                </div>
+              </div>
+              <div class="feature-body">
+                <p>
+                  バランスの取れた食事は元気の素。食習慣を改善して、美味しく・楽しくダイエットを続けましょう！
+                </p>
+              </div>
+            </li>
+
+            <!-- 特徴3 -->
+            <li class="feature fade-in-card">
+              <div class="feature-header">
+                <div class="feature-header-bg corner-cut"></div>
+                <div class="feature-number"><span>3</span></div>
+                <div class="feature-title">
+                  <h3>初心者でも安心の、怪我の<span class="nobr">予防サポート付き</span></h3>
+                </div>
+              </div>
+              <div class="feature-body">
+                <p>
+                  整体師資格を持つトレーナーが、体を痛めず安全にトレーニングできるよう指導。体を痛めるか心配…を解消します。
+                </p>
+              </div>
+            </li>
+
+            <!-- 特徴4 -->
+            <li class="feature fade-in-card">
+              <div class="feature-header">
+                <div class="feature-header-bg corner-cut"></div>
+                <div class="feature-number"><span>4</span></div>
+                <div class="feature-title">
+                  <h3>カスタムメイドなのは<span class="nobr">トレーニングだけでない！</span>お部屋の香りまで♪</h3>
+                </div>
+              </div>
+              <div class="feature-body">
+                <p>
+                  自然との調和を目指す当プログラムでは、お客様のお好みのアロマを焚きます！心身ともにリラックスして取り組みましょう。
+                </p>
+              </div>
+            </li>
+
+            <!-- CTA（特徴セクションの締め） -->
+            <li class="feature fade-in">
+              <a href="#cta" class="cta-button hover-accent" data-gtag="cta:click_features">
+                無料体験を申し込む
+              </a>
+              <img src="media/services-begin.png" alt="トレーニング開始イメージ">
+            </li>
+
+          </ul>
+        </div><!-- /.container -->
+      </section>
+    </div><!-- /.fitness-solution -->
+
+
+    <!-- =====================
+         Trainer / トレーナー紹介
+         （写真＋吹き出し紹介文）
+    ===================== -->
+    <div class="trainers"><!-- bg wrapper（背景用ラッパー） -->
+      <section id="trainer" class="section fade-in">
+        <div class="container">
+
+          <h2>指導歴7年以上の私に<span class="nobr">お任せください！</span></h2>
+
+          <!-- トレーナー紹介：写真＋吹き出し -->
+          <div class="trainer-wrapper">
+
+            <!-- トレーナー写真 -->
+            <div class="trainer-image">
+              <img src="media/trainer-mika.png" alt="トレーナー山口美香の写真">
+            </div>
+
+            <!-- 吹き出し紹介文 -->
+            <article class="trainer-balloon">
+              <h3>トレーニングで自然に還り、<span class="nobr">あなたらしく輝きましょう！</span></h3>
+              <p>こんにちは、山口美香と申します！<br>
+                私は、大の筋トレオタクです（笑）
+              </p>
+              <p>修行僧のような禁欲的なトレーニングが得意かって？とんでもない！<br>
+                私は料理と食べ歩きが趣味で、いつも美味しくご飯が食べられるよう、トレーニングしているようなものです。
+              </p>
+              <p>実はトレーニングには<span class="marker marker--yellow marker--low">楽しく長続きさせるコツ</span>があるんですよ！</p>
+              <p>私はぜひみなさんに、体を鍛える楽しさと、心身の軽やかさを味わってもらい、みなさんが思い思いの充実した時間を過ごせるよう精一杯お手伝いしたいと思っています！</p>
+              <p>怪我のリハビリや慢性病の改善、ストレス対処法などのカウンセリングも行っていますので、<span class="wavy">遊びに来る感覚でまずは気軽に体験</span>してみてください！</p>
+            </article>
+
+          </div><!-- /.trainer-wrapper -->
+
+        </div><!-- /.container -->
+      </section>
+    </div><!-- /.trainers -->
+
+
+    <!-- =====================
+         Concept / コンセプト
+         （ジムの理念・世界観）
+    ===================== -->
+    <section id="concept" class="section fade-in">
+      <div class="container">
+        <h2>自然に還る、<span class="nobr">呼吸と身体の再接続</span></h2>
+        <p>
+          凪は「静けさ」と「調和」を大切にしています。海のリズム、風の流れ、呼吸の深さ。
+          あなたの本来の力を引き出す場所です。
+        </p>
+      </div>
+    </section>
+    <!-- /#concept -->
+
+
+    <!-- =====================
+         Gallery / ギャラリー
+         （設備写真＋イベント紹介）
+    ===================== -->
+
+    <div class="gallery"><!-- bg wrapper（背景用ラッパー） -->
+      <section id="gallery" class="section fade-in">
+        <div class="container">
+
+          <h2>ジムの様子</h2>
+
+          <!-- ギャラリー紹介吹き出し -->
+          <div class="gallery-bubble">
+            <div class="gallery-balloon">
+              楽しく、安全に体を鍛える設備が<br>整っています！
+            </div>
+          </div>
+
+          <!-- =====================
+               ギャラリー3カラム構造
+               左：設備写真
+               中央：イベント紹介
+               右：設備写真
+          ===================== -->
+          <div class="gallery-container">
+
+            <!-- 左カラム -->
+            <div class="gallery-col">
+              <div class="gallery-imgbox">
+                <img src="media/gallery-1.jpg" alt="トレーニングルームの写真">
+                <div class="gallery-caption">トレーニングルーム</div>
+              </div>
+
+              <div class="gallery-imgbox">
+                <img src="media/gallery-2.jpg" alt="楽習中の様子">
+                <div class="gallery-caption">「楽習」中！</div>
+              </div>
+            </div>
+
+            <!-- 中央カラム（イベント紹介） -->
+            <div class="gallery-center corner-cut">
+              <h3>課外活動も行っています♪</h3>
+              <img src="media/gallery-event.png" alt="イベントの様子">
+              <p>
+                当ジムはプライベートレッスンではありますが、
+                <span class="marker marker--pink">生徒なら誰でも参加できるイベント</span>を定期的に開催しています。
+                日帰りハイキングや海辺での早朝ヨガなど。温泉にも行きますよ。
+              </p>
+            </div>
+
+            <!-- 右カラム -->
+            <div class="gallery-col">
+              <div class="gallery-imgbox">
+                <img src="media/gallery-3.jpg" alt="自主練スペースの写真">
+                <div class="gallery-caption">自主練解放中！</div>
+              </div>
+
+              <div class="gallery-imgbox">
+                <img src="media/gallery-4.jpg" alt="トレーニング後のコーヒーサービス">
+                <div class="gallery-caption">
+                  トレーニング後に<span class="nobr">淹れたてをどうぞ</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.gallery-container -->
+
+        </div><!-- /.container -->
+      </section>
+    </div><!-- /.gallery -->
+
+
+    <!-- =====================
+         Before & After / ビフォーアフター
+         （男女2名の成果紹介）
+    ===================== -->
+    <section class="before-after-section section fade-in">
+      <div class="container">
+
+        <h2>一歩踏み出した方たちの<span class="nobr">変化の記録</span></h2>
+        <div class="ba-container">
+
+          <!-- Row 1（女性 Before/After） -->
+          <div class="ba-row woman">
+            <div class="ba-img">
+              <img src="media/beforeandafter-woman.png" alt="女性のビフォーアフター写真">
+
+              <!-- Before / After バッジ（ハート型） -->
+              <div class="shape-badge heart left">
+                <i class="fa-solid fa-heart"></i><span>Before</span>
+              </div>
+              <div class="shape-badge heart right">
+                <i class="fa-solid fa-heart"></i><span>After</span>
+              </div>
+            </div>
+
+            <!-- Balloon（女性コメント） -->
+            <div class="ba-text bubble-right">
+              <div class="ba-inner corner-cut">
+                <p>Y・Mさん</p>
+                <table class="ba-table">
+                  <tr>
+                    <th>体脂肪率</th>
+                    <td>-5％</td>
+                  </tr>
+                  <tr>
+                    <th>ウエスト</th>
+                    <td>-8cm</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td>-7kg</td>
+                  </tr>
+                </table>
+                <p>食事と運動のバランスを見直しただけで、からだが軽くなり、ウエストも6cmすっきりしました。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2（男性 Before/After） -->
+          <div class="ba-row man">
+            <div class="ba-img">
+              <img src="media/beforeandafter-man.png" alt="男性のビフォーアフター写真">
+
+              <!-- Before / After バッジ（星型） -->
+              <div class="shape-badge star left">
+                <i class="fa-solid fa-star"></i><span>Before</span>
+              </div>
+              <div class="shape-badge star right">
+                <i class="fa-solid fa-star"></i><span>After</span>
+              </div>
+            </div>
+
+            <!-- Balloon（男性コメント） -->
+            <div class="ba-text bubble-left">
+              <div class="ba-inner corner-cut">
+                <p>K・Jさん</p>
+                <table class="ba-table">
+                  <tr>
+                    <th>体脂肪率</th>
+                    <td>-5％</td>
+                  </tr>
+                  <tr>
+                    <th>ウエスト</th>
+                    <td>-8cm</td>
+                  </tr>
+                  <tr>
+                    <th>体重</th>
+                    <td>-6kg</td>
+                  </tr>
+                </table>
+                <p>無理なく続けられるトレーニングで、お腹まわりが8cm引き締まり、体力もぐっと上がりました。</p>
+              </div>
+            </div>
+          </div><!-- /.ba-row -->
+<p class="note">※掲載している変化は個人の感想・結果であり、すべての方に同様の効果を保証するものではありません。</p>
+        </div><!-- /.ba-container -->
+      </div><!-- /.container -->
+    </section>
+    <!-- /.before-after-section -->
+
+
+    <!-- =====================
+         Testimonials / お客様の声
+         （4名のレビューカード）
+    ===================== -->
+    <div class="testimonial"><!-- bg wrapper（背景用ラッパー） -->
+      <section id="voice" class="section fade-in">
+        <div class="container">
+
+          <h2>お客様の声</h2>
+
+          <!-- お客様レビュー（カード4枚） -->
+          <ul class="testimonials">
+
+            <!-- Customer 1 -->
+            <li class="card fade-in-card">
+              <img src="media/testimonial-1.jpg" alt="お客様 森真紀子様" class="customer-image" />
+              <p class="name">森 真紀子 様</p>
+              <p class="comment-title">プライベートで安心♪</p>
+              <p class="comment">
+                人前で運動するのが苦手でしたが、プライベートレッスンで安心して続けられています。<br>
+                先生の励ましが心強く、マイペースに楽しめています！
+              </p>
+            </li>
+
+            <!-- Customer 2 -->
+            <li class="card fade-in-card">
+              <img src="media/testimonial-2.jpg" alt="お客様 田中英恵様" class="customer-image" />
+              <p class="name">田中 英恵 様</p>
+              <p class="comment-title">腰痛が治り、奇跡のようです！</p>
+              <p class="comment">
+                長年の腰痛が、筋トレでいつの間にか改善！<br>
+                血行も良くなり、冷え性も改善しました。
+              </p>
+            </li>
+
+            <!-- Customer 3 -->
+            <li class="card fade-in-card">
+              <img src="media/testimonial-3.jpg" alt="お客様 神原なな様" class="customer-image" />
+              <p class="name">神原 なな 様</p>
+              <p class="comment-title">今はスマホよりお出かけに夢中です！</p>
+              <p class="comment">
+                体が軽くなり、外出が楽しくなりました。<br>
+                スマホ中毒まで改善されてびっくりです（笑）
+              </p>
+            </li>
+
+            <!-- Customer 4 -->
+            <li class="card fade-in-card">
+              <img src="media/testimonial-4.jpg" alt="お客様 二階堂次郎様" class="customer-image" />
+              <p class="name">二階堂 次郎 様</p>
+              <p class="comment-title">夫婦でお世話になっています！</p>
+              <p class="comment">
+                妻の勧めで始めましたが、今では一緒に登山を楽しめるまでに！<br>
+                食事指導もありがたく、体型もキープできています。
+              </p>
+            </li>
+
+          </ul><!-- /.testimonials -->
+
+        </div><!-- /.container -->
+      </section>
+    </div>
+    <!-- /#voice -->
+
+
+    <!-- =====================
+         Pricing / 料金３プラン
+         （PCカード＋SP表＋特典）
+    ===================== -->
+    <div class="pricing"><!-- bg wrapper（背景用ラッパー） -->
+      <section id="price" class="section fade-in">
+        <div class="container">
+
+          <h2>料金プラン</h2>
+
+          <!-- Price Cards（PC表示） -->
+          <div class="pricecard-container">
+
+            <!-- Card 1 -->
+            <article class="pricecard fade-in-card">
+              <h3>「楽習」プラン</h3>
+              <p>月4日・60分/回</p>
+              <div class="price"><span>¥44,000</span> (税込)</div>
+              <div class="description">「がくしゅう」を楽しんでこそ長続き、効果的！</div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="pricecard fade-in-card">
+              <h3>探究者プラン</h3>
+              <p>月6日・60分/回</p>
+              <div class="price"><span>¥77,000</span> (税込)</div>
+              <div class="description">もっと色々試して、ご自身を知りたい方に！</div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="pricecard fade-in-card">
+              <h3>挑戦者プラン</h3>
+              <p>月8日・60分/回</p>
+              <div class="price"><span>¥88,000</span> (税込)</div>
+              <div class="description">更に上を着実に目指したい方におススメです！</div>
+            </article>
+
+          </div><!-- /.pricecard-container -->
+
+
+          <!-- Price Table（SP表示） -->
+          <div class="price-table-sp">
+
+            <!-- Header Row -->
+            <div class="header-row">
+              <div class="header-cell">回数</div>
+              <div class="header-cell">料金</div>
+              <div class="header-cell">内容</div>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="price-row">
+              <div class="plan-tab">
+                <span class="tab-main">楽習</span>
+                <span class="tab-sub">プラン</span>
+              </div>
+              <div class="price-cell">月4日<br>60分/回</div>
+              <div class="price-cell">¥44,000</div>
+              <div class="price-cell">「がくしゅう」を楽しんでこそ長続き、効果的！</div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="price-row">
+              <div class="plan-tab">
+                <span class="tab-main">探究者</span>
+                <span class="tab-sub">プラン</span>
+              </div>
+              <div class="price-cell">月6日<br>60分/回</div>
+              <div class="price-cell">¥77,000</div>
+              <div class="price-cell">もっと色々試して、ご自身を知りたい方に！</div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="price-row">
+              <div class="plan-tab">
+                <span class="tab-main">挑戦者</span>
+                <span class="tab-sub">プラン</span>
+              </div>
+              <div class="price-cell">月8日<br>60分/回</div>
+              <div class="price-cell">¥88,000</div>
+              <div class="price-cell">更に上を着実に目指したい方におススメです！</div>
+            </div>
+
+          </div><!-- /.price-table-sp -->
+
+
+          <!-- Membership Fee（入会金） -->
+          <div class="price-membership fade-in">
+            <div class="price-left">入会金<span class="change">￥20,000(税込）</span></div>
+            <div class="price-right">対象：<span class="change">すべてのプラン</span></div>
+          </div>
+
+          <!-- Benefits（特典） -->
+          <div class="benefits fade-in">
+            <ul class="benefit-list">
+
+              <!-- Benefit 1 -->
+              <li class="benefit-item">
+                <span class="checkbox"></span>
+                <span>随時「自主トレーニング」でルームを解放。全てのプランの方に利用頂けます。</span>
+              </li>
+
+              <!-- Benefit 2 -->
+              <li class="benefit-item">
+                <span class="checkbox"></span>
+                <span>トレーニングの効果をあげるための栄養指導もいたします。ご希望の方にはトレーナー指定のアプリで管理頂きます。</span>
+              </li>
+
+              <!-- Benefit 3 -->
+              <li class="benefit-item">
+                <span class="checkbox"></span>
+                <span>トレーニングとは別に、月に1回目標について話し合うカウンセリングも行います。</span>
+              </li>
+
+            </ul>
+          </div>
+
+        </div><!-- /.container -->
+      </section>
+    </div>
+    <!-- /#price -->
+
+
+    <!-- =====================
+         FAQ / よくある質問
+         （アコーディオン3項目）
+    ===================== -->
+    <section id="faq" class="section fade-in">
+      <div class="container">
+
+        <!-- 飾りのクエスチョンマーク -->
+        <div class="faq-marks">
+          <span class="question-mark q1">?</span>
+          <span class="question-mark q2">?</span>
+          <span class="question-mark q3">?</span>
+        </div>
+
+        <h2>よくある質問</h2>
+
+        <!-- FAQ アコーディオン -->
+        <div class="accordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header">Q. トレーニングの予約方法は？</button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>入会後、トレーニングの予約は専用のオンライン予約システムから簡単に行えます。また、電話やメールでの予約も受け付けています。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header">Q. トレーニングの所用時間は？</button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>1回のトレーニングセッションは通常60分です。お客様のスケジュールに合わせて柔軟に対応いたします。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header">Q. 持ち物は必要ですか？</button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>運動できる服とシューズだけで大丈夫です。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header">Q. シャワールームはありますか？</button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>はい、完備しております。ただし、せっけんやシャンプーなどアメニティはご持参下さいますようお願いいたします。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <button class="accordion-header">Q. 友人と2人での参加は可能？</button>
+            <div class="accordion-content">
+              <div class="accordion-inner">
+                <p>はい、3人までは一緒にご参加頂けますが、そのぶん個人指導は限られてしまいますのでご留意ください。</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div><!-- /.accordion -->
+
+      </div><!-- /.container -->
+    </section>
+    <!-- /#faq -->
+
+
+    <!-- =====================
+         CTA Form / 申込フォーム
+         （名前・連絡先・希望日・要望）
+    ===================== -->
+    <section id="cta" class="section fade-in">
+      <div class="container">
+
+        <h2>申込フォーム</h2>
+
+        <form id="apply-form" class="apply-form card">
+
+          <!-- Name（お名前） -->
+          <div class="form-group">
+            <label for="name">
+              <i class="fa-solid fa-user"></i> お名前<span class="asterisk">*</span>
+            </label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <!-- Email（メールアドレス） -->
+          <div class="form-group">
+            <label for="email">
+              <i class="fa-solid fa-envelope"></i> メールアドレス<span class="asterisk">*</span>
+            </label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <!-- Phone（電話番号） -->
+          <div class="form-group">
+            <label for="tel">
+              <i class="fa-solid fa-phone"></i> 電話番号<span class="asterisk">*</span>
+            </label>
+            <input id="tel" name="tel" type="tel" required>
+          </div>
+
+          <!-- Plan Select（プラン選択） -->
+          <div class="form-group">
+            <label for="plan">
+              <i class="fa-solid fa-heart"></i> ご希望のプラン<span class="asterisk">*</span>
+            </label>
+            <select id="plan" name="plan" required>
+              <option value="">プランを選択してください</option>
+              <option value="Option 1">「楽習」プラン</option>
+              <option value="Option 2">探究者プラン</option>
+              <option value="Option 3">挑戦者プラン</option>
+            </select>
+          </div>
+
+          <!-- Preferred Dates（希望日：第1〜第3） -->
+          <div class="form-group">
+            <label>
+              <i class="fa-solid fa-calendar-days"></i> 希望日（第1〜第3）<span class="asterisk">*</span>
+              <span class="note">第一希望のみ必須</span>
+            </label>
+
+            <!-- Date 1（第1希望） -->
+            <div class="date-row">
+              <input id="date1" name="date1" type="text" placeholder="第1希望日" readonly>
+              <select id="time1" name="time1" required>
+                <option value="">時間を選択してください</option>
+              </select>
+            </div>
+
+            <!-- Date 2（第2希望） -->
+            <div class="date-row">
+              <input id="date2" name="date2" type="text" placeholder="第2希望日" readonly>
+              <select id="time2" name="time2">
+                <option value="">時間を選択してください</option>
+              </select>
+            </div>
+
+            <!-- Date 3（第3希望） -->
+            <div class="date-row">
+              <input id="date3" name="date3" type="text" placeholder="第3希望日" readonly>
+              <select id="time3" name="time3">
+                <option value="">時間を選択してください</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Request（ご要望） -->
+          <div class="form-group">
+            <label for="request">
+              <i class="fa-solid fa-star"></i> トレーニングに関するご希望やご要望
+            </label>
+            <textarea id="request" name="request" rows="5" placeholder="例：肩こり改善を中心にしたい、運動初心者なのでゆっくり進めたい など"></textarea>
+          </div>
+
+          <!-- Submit Button（送信ボタン） -->
+          <button type="submit" class="cta-button" data-gtag="form:submit">
+            送信する
+          </button>
+
+        </form><!-- /#apply-form -->
+
+      </div><!-- /.container -->
+    </section>
+    <!-- /#cta -->
+
+
+    <!-- =====================
+         Access / 店舗情報
+         （MAP＋住所＋営業時間）
+    ===================== -->
+    <div id="bottom-bg"><!-- bg wrapper（背景用ラッパー） -->
+
+      <!-- Access Panel（店舗情報＋MAP） -->
+      <section id="access" class="section fade-in">
+        <div class="container">
+
+          <div class="access-panel card">
+
+            <!-- Map Area（Google Map） -->
+            <div class="map-area">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1368.7824161970539!2d139.37874918565208!3d35.31761901701153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018518de700c4f5%3A0x347bbe959a029ba8!2z56We5aWI5bed55yM6Jek5rKi5biC!5e0!3m2!1sja!2sjp!4v1739580532024!5m2!1sja!2sjp"
+                allowfullscreen loading="lazy">
+              </iframe>
+            </div>
+
+            <!-- Info Area（店舗情報） -->
+            <div class="info-area">
+              <h2>店舗情報</h2>
+
+              <!-- Store Name -->
+              <div class="info-item">
+                <i class="fas fa-store info-icon"></i>
+                <p>パーソナルトレーニングジム ～凪～</p>
+              </div>
+
+              <!-- Address -->
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt info-icon"></i>
+                <p>〒123-4567 神奈川県藤沢市例町1-2-3</p>
+              </div>
+
+              <!-- Phone -->
+              <div class="info-item">
+                <i class="fas fa-phone info-icon"></i>
+                <p>03-1234-5678</p>
+              </div>
+
+              <div class="divider"></div>
+
+              <h3>営業時間</h3>
+
+              <!-- Business Hours -->
+              <div class="info-item">
+                <i class="fas fa-calendar-alt info-icon"></i>
+                <p>月〜金：7:00〜21:00</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-calendar-alt info-icon"></i>
+                <p>土：8:00〜18:00</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-calendar-alt info-icon"></i>
+                <p>日：休業</p>
+              </div>
+            </div><!-- /.info-area -->
+
+          </div><!-- /.access-panel -->
+
+        </div><!-- /.container -->
+      </section>
+      <!-- /#access -->
+
+
+      <!-- =====================
+           Bottom CTA / 下部CTAバナー
+      ===================== -->
+      <section id="campaign-bottom" class="section fade-in">
+        <div class="container">
+
+          <!-- CTA バナー全体 -->
+          <div class="cta-banner fade-zoom">
+
+            <!-- 60分バッジ -->
+            <div class="starburst-wrapper">
+              <div class="starburst">
+                <span class="badge-number">60</span>分
+              </div>
+            </div>
+
+            <!-- 見出し -->
+            <header class="cta-header">
+              <h3 class="cta-main">
+                <span class="slash">＼</span>
+                <span class="cta-text">無料体験キャンペーン<span class="nobr">実施中 !</span></span>
+                <span class="slash">／</span>
+              </h3>
+            </header>
+
+            <!-- CTA ボックス（説明＋ボタン） -->
+            <div class="cta-box">
+              <p>その場でのお申込みで <span class="nobr marker marker--yellow marker--low emphasis">￥20,000の入会金も無料！</span></p>
+
+              <a href="#cta" class="cta-button hover-accent" data-gtag="cta:click_bottom">
+                無料体験を申し込む
+              </a>
+            </div>
+
+          </div><!-- /.cta-banner -->
+
+        </div><!-- /.container -->
+      </section>
+      <!-- /#campaign-bottom -->
+
+
+      <!-- =====================
+           TEL CTA / 電話申込
+      ===================== -->
+      <section id="tel-section" class="section fade-in">
+
+        <div class="tel-center">
+
+          <!-- TEL Link（電話申込） -->
+          <a href="tel:0312345678" class="tel-box cta-motion" data-gtag="tel:click">
+
+            <span class="icon-container">
+              <i class="fas fa-phone phone-icon"></i>
+            </span>
+
+            <span class="tel-text">
+              <span class="message">お電話でもお申込み頂けます</span>
+              <span class="tel-number">03-1234-5678</span>
+              <span class="note">受付時間：平日8時～20時、土曜9時～17時</span>
+            </span>
+
+          </a>
+
+        </div><!-- /.tel-center -->
+
+      </section>
+      <!-- /#tel-section -->
+
+    </div><!-- /#bottom-bg -->
+
+  </main>
+
+
+  <!-- =====================
+       Footer / フッター
+    ===================== -->
+  <footer class="footer">
+    <div class="scroll-top">
+  <a href="#top">
+    
+    <img src="media/arrow-top.svg" alt="TOPに戻る">
+    <span>TOP</span>
+  </a>
+</div>
+<address>
+  〒123-4567 神奈川県藤沢市例町1-2-3<br>
+  <a href="tel:0312345678">電話番号：03-1234-5678</a>
+</address>
+<p>&copy; 2025 パーソナルトレーニングジム～凪～ <span class="nobr">All Rights Reserved.</span></p>
+
+  </footer>
+
+
+  <!-- =====================
+       JS
+    ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
