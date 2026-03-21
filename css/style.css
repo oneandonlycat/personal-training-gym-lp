@@ -85,6 +85,64 @@ html {
 /* #region BASE — 共通レイアウト・タイポグラフィ */
 /* ============================================ */
 
+/* ===========================
+   Fonts (Local Webfonts)
+=========================== */
+
+/* --- Noto Sans JP --- */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/NotoSansJP-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/NotoSansJP-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* --- Kaisei Opti --- */
+@font-face {
+  font-family: 'Kaisei Opti';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/KaiseiOpti-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* --- Outfit --- */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Outfit-SemiBold.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* --- Stardos Stencil --- */
+@font-face {
+  font-family: 'Stardos Stencil';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/StardosStencil-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* --- Yeseva One --- */
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/YesevaOne-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+
 body {
   font-family: var(--font-base);
   background: var(--bg-color);
@@ -280,7 +338,7 @@ article p+p {
 }
 
 .site-title-main {
-  font-family: "Kaisei Decol", serif;
+  font-family: "Kaisei Opti", serif;
   font-size: 1.6rem;
 }
 
@@ -1216,7 +1274,7 @@ article p+p {
 
 .ba-table th {
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--main-color);
 }
 
