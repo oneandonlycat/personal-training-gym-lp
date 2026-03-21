@@ -1456,7 +1456,7 @@ article p+p {
   /* 表全体（4列構成） */
   .price-table-sp {
     display: grid;
-    grid-template-columns: 60px 0.7fr 1fr 1fr;
+    grid-template-columns: 60px minmax(0, 0.7fr) minmax(0, 0.7fr) minmax(0, 1fr);
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -1611,7 +1611,7 @@ article p+p {
   font-size: 16px;
 }
 
-/* SP：料金表の調整（特典とは無関係） */
+/* SP */
 @media (max-width: 768px) {
   .pricecard-container {
     flex-direction: column;
