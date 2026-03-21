@@ -447,7 +447,7 @@ article p+p {
   box-shadow: var(--card-shadow);
   max-width: 600px;
   margin: 0 auto;
-  background-image: url('../media/campaign-img.jpg');
+  background-image: url('../media/campaign-img.webp');
   background-position: 0% 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -689,7 +689,7 @@ article p+p {
 
 /* 背景画像固定 */
 .fitness-solution {
-  background-image: url('../media/section-services.png');
+  background-image: url('../media/section-services.webp');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1278,7 +1278,7 @@ article p+p {
 
 /* 背景画像 */
 .testimonial {
-  background-image: url('../media/bg-testimonials.png');
+  background-image: url('../media/bg-testimonials.webp');
   background-position: 33% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1940,7 +1940,7 @@ article p+p {
 
 /* セクション背景 */
 #bottom-bg {
-  background-image: url('../media/bottom-image.png');
+  background-image: url('../media/bottom-image.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
