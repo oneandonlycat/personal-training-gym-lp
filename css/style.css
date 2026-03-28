@@ -85,11 +85,6 @@ html {
 /* #region BASE — 共通レイアウト・タイポグラフィ */
 /* ============================================ */
 
-/* ===========================
-   Fonts (Local Webfonts)
-=========================== */
-
-/* --- Noto Sans JP --- */
 @font-face {
   font-family: 'Noto Sans JP';
   font-style: normal;
@@ -106,7 +101,6 @@ html {
   font-display: swap;
 }
 
-/* --- Kaisei Opti --- */
 @font-face {
   font-family: 'Kaisei Opti';
   font-style: normal;
@@ -115,7 +109,6 @@ html {
   font-display: swap;
 }
 
-/* --- Outfit --- */
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -124,7 +117,6 @@ html {
   font-display: swap;
 }
 
-/* --- Stardos Stencil --- */
 @font-face {
   font-family: 'Stardos Stencil';
   font-style: normal;
@@ -133,7 +125,6 @@ html {
   font-display: swap;
 }
 
-/* --- Yeseva One --- */
 @font-face {
   font-family: 'Yeseva One';
   font-style: normal;
@@ -141,7 +132,6 @@ html {
   src: url('../fonts/YesevaOne-Regular.woff2') format('woff2');
   font-display: swap;
 }
-
 
 body {
   font-family: var(--font-base);
@@ -200,12 +190,26 @@ h3 {
   letter-spacing: 0.1em;
 }
 
+.before-after-section  h2 {
+  margin-bottom: 0rem;
+}
+
 @media (max-width: 768px) {
   h2 {
     line-height: 1.3em;
   }
 }
 
+.subheading {
+  background-color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto 2rem;
+  border: none;
+  font-size: var(--text-small);
+  border-radius: 5px;
+  display: block;
+  width: fit-content;
+}
 .note {
   font-size: var(--text-note);
 }
@@ -296,11 +300,6 @@ article p+p {
   background: white;
   overflow: hidden;
   padding: var(--card-padding);
-}
-
-.testimonials .card,
-.gallery-item,
-.accordion .card {
   box-shadow: var(--card-shadow);
 }
 
@@ -506,13 +505,14 @@ article p+p {
   max-width: 600px;
   margin: 0 auto;
   background-image: url('../media/campaign-img.webp');
-  background-position: 0% 40%;
+  background-position: 0% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .cta-header {
   background-color: var(--main-color);
+  font-family: Kaisei Opti;
   color: white;
   padding: 1.5rem 1rem;
   border-radius: 12px 12px 0 0;
@@ -531,10 +531,6 @@ article p+p {
 .slash {
   flex-shrink: 0;
   color: yellow;
-}
-
-.cta-text .nobr {
-  white-space: nowrap;
 }
 
 .cta-box {
@@ -1122,6 +1118,10 @@ article p+p {
 
 .before-after-section h2 {
   font-size: var(--heading-sub);
+}
+
+.before-after-section .subheading {
+  box-shadow: 1px 4px 0 rgb(255, 255, 0);
 }
 
 /* 全体を縦に積む */
