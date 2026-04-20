@@ -203,11 +203,11 @@ h3 {
 .subheading {
   background-color: var(--accent-color);
   padding: 0.5rem 1rem;
-  margin: 0.5rem auto 2rem;
+  margin: 1rem auto 2rem;
   border: none;
   font-size: var(--text-small);
   border-radius: 5px;
-  display: block;
+  display: block;s
   width: fit-content;
 }
 .note {
