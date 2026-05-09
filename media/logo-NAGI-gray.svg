@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-2ecca7a6-2bf9-4b33-a0cc-433ed12856ec" data-name="uuid-a3d013d8-afb2-470a-b126-5a235242bae0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.6 137.36">
+  <defs>
+    <style>
+      .uuid-6a2e326b-3d35-4923-b9e1-a044de3a2b52, .uuid-06b898bb-a7de-42bf-9a7f-26003efd3bc6, .uuid-851f69e0-a224-4239-a48b-0a3674b9fa18 {
+        fill: #727272;
+      }
+
+      .uuid-ad10ea00-e265-45f5-9b9e-eee160e8f329, .uuid-06b898bb-a7de-42bf-9a7f-26003efd3bc6, .uuid-851f69e0-a224-4239-a48b-0a3674b9fa18 {
+        isolation: isolate;
+      }
+
+      .uuid-06b898bb-a7de-42bf-9a7f-26003efd3bc6 {
+        letter-spacing: -.06em;
+      }
+
+      .uuid-06b898bb-a7de-42bf-9a7f-26003efd3bc6, .uuid-851f69e0-a224-4239-a48b-0a3674b9fa18 {
+        font-family: ArialMT, Arial;
+        font-size: 21px;
+      }
+    </style>
+  </defs>
+  <path class="uuid-6a2e326b-3d35-4923-b9e1-a044de3a2b52" d="M107.6,133.76v3.6H41.91v-59.91H3.6v59.91H0v-63.51h45.51v59.91h62.1-.01ZM33.48,91.85v3.6h-11.88v38.31h11.88v3.6H5.9v-3.6h5.98v-53.93h3.6v53.93h2.52v-53.93h3.6v12.02s11.88,0,11.88,0Z"/>
+  <g class="uuid-ad10ea00-e265-45f5-9b9e-eee160e8f329">
+    <text class="uuid-851f69e0-a224-4239-a48b-0a3674b9fa18" transform="translate(79.74 18.16)"><tspan x="0" y="0">N</tspan></text>
+    <text class="uuid-06b898bb-a7de-42bf-9a7f-26003efd3bc6" transform="translate(80.15 54.91)"><tspan x="0" y="0">A</tspan></text>
+    <text class="uuid-851f69e0-a224-4239-a48b-0a3674b9fa18" transform="translate(80 91.66)"><tspan x="0" y="0">G</tspan></text>
+    <text class="uuid-851f69e0-a224-4239-a48b-0a3674b9fa18" transform="translate(83.85 128.41)"><tspan x="0" y="0">I</tspan></text>
+  </g>
+</svg>
