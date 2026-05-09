@@ -350,7 +350,6 @@ article p+p {
 
 .site-title {
   margin: 0;
-  font-weight: normal;
   display: flex;
   align-items: baseline;
   gap: 0.3rem;
@@ -361,10 +360,19 @@ article p+p {
   font-size: 1rem;
 }
 
-.site-title-main {
-  font-family: "Kaisei Opti", serif;
-  font-size: 1.6rem;
+.site-title-main img{
+  width:80px;
+  height:auto;
 }
+
+/* SP：動画・文字サイズと位置調整 */
+@media (max-width: 768px) {
+ .site-title-main img{
+   width:70px;
+   height:auto;
+ }
+}
+
 
 /* ============================================ */
 /* #endregion */
@@ -433,6 +441,8 @@ article p+p {
   font-family: "Shippori Mincho", serif;
   letter-spacing: 0.3em;
   text-align: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
 }
 
 /* FV 下の余白 */
@@ -636,6 +646,11 @@ article p+p {
 /* #region FITNESS WORRIES — 女性画像＋吹き出し */
 /* ============================================ */
 
+#fitness-worries {
+  background: #D6EEFF;
+  background: linear-gradient(180deg, rgba(214, 238, 255, 1) 0%, rgba(223, 242, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);;
+}
+
 /* 全体を中央配置 */
 .worry-area {
   display: flex;
@@ -777,7 +792,6 @@ article p+p {
 
 /* 見出しの装飾 */
 .fitness-solution h2 {
-  margin-bottom: 100px;
   border: 5px solid #ff7f50;
   font-family: "Shippori Mincho", serif;
   font-weight: bold;
@@ -786,6 +800,8 @@ article p+p {
   background: rgba(255, 255, 255, 0.85);
   padding: 0.5rem;
   position: relative;
+  margin: 0 auto 100px;
+  max-width:800px;
 }
 
 /* 特徴画像 */
@@ -799,6 +815,11 @@ article p+p {
   margin-inline: auto;
 }
 
+/* 特徴中央寄せ*/
+.feature-header,
+.feature-body {
+  margin: 0 auto;
+}
 /* 最後の特徴だけ余白追加 */
 .features li:last-child {
   margin-top: var(--space-lg);
@@ -911,14 +932,30 @@ article p+p {
 
 /* 背景ストライプ */
 .trainers {
-  background: repeating-linear-gradient(135deg,
-      #d6eeff,
-      #d6eeff 15px,
-      #fff 0,
-      #fff 30px);
+  background:
+    /* ストライプ（白い部分だけ不透明） */
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,1) 0,       /* 白ストライプ */
+      rgba(255,255,255,1) 15px,
+      rgba(255,255,255,0) 15px,   /* 透明 → 下地が見える */
+      rgba(255,255,255,0) 30px
+    ),
+    /* 下地の縦グラデ（ここが水色グラデ） */
+    linear-gradient(
+      180deg,
+      rgba(214, 238, 255, 1) 0%,
+      rgba(223, 242, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+
   background-attachment: fixed;
   padding: 20px 0;
 }
+
+
+
+
 
 /* 画像＋吹き出しの横並び */
 .trainer-wrapper {
@@ -1433,13 +1470,26 @@ article p+p {
 
 /* 背景ストライプ */
 .pricing {
-  background: repeating-linear-gradient(135deg,
-      #ffbc37,
-      #ffbc37 15px,
-      #fff 0,
-      #fff 30px);
+  background:
+    /* ストライプ（白い部分だけ不透明） */
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,1) 0,
+      rgba(255,255,255,1) 15px,
+      rgba(255,255,255,0) 15px,   /* ← 透明 → 下地のオレンジグラデが見える */
+      rgba(255,255,255,0) 30px
+    ),
+    /* 下地のオレンジ縦グラデーション */
+    linear-gradient(
+      180deg,
+      rgba(255, 188, 55, 1) 0%,   /* #ffbc37 の濃いめ */
+      rgba(255, 205, 100, 1) 50%, /* 中間の明るいオレンジ */
+      rgba(255, 255, 255, 1) 100% /* 白へフェード */
+    );
+
   background-attachment: fixed;
 }
+
 
 /* ===== PC：丸い料金カード ===== */
 .pricecard-container {
@@ -2200,7 +2250,13 @@ footer {
   text-align: center;
   padding: 1rem 0;
   font-size: var(--text-small);
+  background-image: url("../media/logo-NAGI-gray.svg");
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 80% 20%; 
 }
+
+
 
 footer p:last-of-type {
   margin-top: var(--space-sm);
