@@ -1,3 +1,31 @@
+/* #region FV — 動画が読み込まれたら overlay を表示 */
+document.addEventListener("DOMContentLoaded", function() {
+  const video = document.querySelector("#fv video");
+  const overlay = document.querySelector(".overlay");
+
+  let shown = false;
+
+  function showOverlay() {
+    if (!shown) {
+      overlay.style.opacity = 1;
+      shown = true;
+    }
+  }
+
+  // ① 動画が読み込まれたら表示
+  video.addEventListener("loadeddata", showOverlay);
+
+  // ② すでに読み込まれている場合（キャッシュ時）
+  if (video.readyState >= 2) {
+    showOverlay();
+  }
+
+  // ③ 最悪、2秒経っても loadeddata が来なければ表示（保険）
+  setTimeout(showOverlay, 2000);
+});
+/* #endregion */
+
+
 /* #region ACCORDION — 質問の開閉アニメーション */
 document.querySelectorAll('.accordion-header').forEach(header => {
   header.addEventListener('click', () => {
