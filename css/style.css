@@ -261,18 +261,6 @@ article p+p {
   text-decoration: rgb(255, 213, 0) wavy underline;
 }
 
-.decorated-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:20px;
-}
-
-.decorated-title .title-text {
-  min-width: 0;
-}
-
-
 /* #endregion */
 /* ============================================ */
 
@@ -341,6 +329,139 @@ article p+p {
 /* ============================================ */
 
 /* ============================================ */
+/* #region TITLE-BG — セクションタイトルの英文字装飾 */
+/* ============================================ */
+
+/* セクションタイトル無用 */
+.Entitle-section {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+#bottom-bg .Entitle-section {
+  width: 220px;
+  margin: 0 auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.6;
+}
+
+/* 英文字位置・大きさ調整 */
+.section-title {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.title-decoration {
+  position: absolute;
+  left: -10px;
+  top: -40px;
+  width: 220px;
+  height: auto;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+#faq .title-decoration {
+  width: 150px;
+}
+
+@media (min-width: 769px) {
+  #cta .title-decoration {
+   width: 350px;
+  } 
+}
+
+@media (max-width: 768px) {
+  #cta .title-decoration {
+   left: -90px;
+   width: 270px;
+  } 
+}
+
+/* 中央寄せ */
+#fitness-worries,
+#fitness-solutions,
+#trainer,
+#concept,
+#gallery,
+#before-after,
+#voice,
+#price,
+#faq,
+#cta {
+  text-align: center;
+}
+
+/* 色反転（濃い背景用） */
+.dark-section .title-decoration {
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+}
+
+/* カード型タイトル用英文字装飾 */
+#fitness-solutions .section-title {
+  position: relative;
+  overflow: visible;
+}
+
+/* 文字を前面 */
+#fitness-solutions .section-title > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* 装飾画像 */
+.bg-title::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 270px;
+  aspect-ratio: 211.97 / 77.41;
+  background-image: url("../media/title-solutions.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Before After タイトル */
+#before-after .section-title {
+  /* 装飾画像（absolute）の基準位置にする */
+  position: relative;
+  /* ＼ テキスト ／ を横並びにする */
+  display: flex;
+  /* 縦方向の中央揃え */
+  align-items: center;
+  /* 横方向の中央揃え */
+  justify-content: center;
+  /* ＼ と文字の間隔 */
+  gap: 20px;
+  /* タイトルの幅を文字サイズぴったりにする */
+  width: fit-content;
+  /* タイトル全体を中央配置 */
+  margin-inline: auto;
+  /* 折り返した文字を中央揃え */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  #before-after .section-title {
+    gap: 10px;
+  }
+
+}
+
+/* ============================================ */
+/* #endregion */
+
+/* ============================================ */
 /* #region HEADER — サイト上部のロゴ・タイトル */
 /* ============================================ */
 
@@ -374,8 +495,6 @@ article p+p {
  }
 }
 
-
-/* ============================================ */
 /* #endregion */
 /* ============================================ */
 
