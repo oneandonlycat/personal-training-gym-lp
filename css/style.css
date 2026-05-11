@@ -395,6 +395,10 @@ article p+p {
 #cta {
   text-align: center;
 }
+#apply-form{
+  text-align: left;
+}
+
 
 /* 色反転（濃い背景用） */
 .dark-section .title-decoration {
