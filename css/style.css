@@ -38,6 +38,7 @@ p {
   --accent-color: #ff7f50;
   --bg-color: #f9f9f9;
   --text-color: #333;
+  --font-accent-number: "Freeman", sans-serif;
   --font-base: "Noto Sans JP", sans-serif;
   --font-emphasis: 600;
   --heading-size: 2rem;
@@ -133,6 +134,17 @@ html {
   font-weight: 400;
   src: url('../fonts/YesevaOne-Regular.woff2') format('woff2');
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Freeman";
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Freeman-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+.font-accent-number {
+  font-family: var(--font-accent-number);
 }
 
 body {
@@ -1102,7 +1114,6 @@ article p+p {
 /* 吹き出し本体 */
 .trainer-balloon {
   position: relative;
-  max-width: 400px;
   background: #88b7d5;
   border: 4px solid #c2e1f5;
   padding: 10px;
