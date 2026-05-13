@@ -1837,15 +1837,17 @@ article p+p {
   max-width: 1000px;
   width: 90%;
   text-align: left;
-  line-height: 1.1;
+  line-height: 1.2;
   border: 2px solid gold;
 }
-
+.benefit-list{
+  margin-bottom: 10px;
+}
 /* 各特典項目（左にチェック） */
 .benefit-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  padding: 7px 0;
   border-bottom: 1px solid orange;
 }
 
@@ -1885,6 +1887,10 @@ article p+p {
 @media (max-width: 768px) {
   .pricecard-container {
     flex-direction: column;
+  }
+  .benefits,
+  .benefit-item span {
+  font-size: 14px;
   }
 }
 
