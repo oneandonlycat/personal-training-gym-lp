@@ -1329,6 +1329,12 @@ article p+p {
   margin-right:0.3em;
 }
 
+@media (max-width: 768px) {
+  .accent-change {
+   font-size: 1.1rem;
+  }
+}
+
 /* 全体を縦に積む */
 .ba-container {
   display: flex;
